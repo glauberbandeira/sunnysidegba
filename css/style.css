@@ -1,6 +1,7 @@
 @import './global/global.css';
 @import './home/header.css';
 @import './global/tipografica.css';
+@import './home/inner.css';
 
 .header-bg {
   height: 100vw;

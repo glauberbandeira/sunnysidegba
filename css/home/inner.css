@@ -1,0 +1,28 @@
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.inner-content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.inner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Dessa forma coloco a imagem do tamanho do grid */
+.inner-image img {
+  width: 100%;
+  /* height: auto; */
+}
