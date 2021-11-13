@@ -4,30 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <title>Sunnside</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
 </head>
 <body>
-  <header>
-    <div class="header">
-      <img src="./images/logo.svg" alt="Sunnyside logo" width="250px" height="48px">
-
+  <header class="header-bg">
+    <div class="header container">
+      <a href="/"><img src="./images/logo.svg" alt=""></a>
+    
       <ul class="header-menu">
+        <li><a class="cor-branca" href="#about">about</a></li>
+        <li><a class="cor-branca" href="#services">services</a></li>
+        <li><a class="cor-branca" href="#projects">projects</a></li>
+        <li><a class="botao-contact cor-font-botao" href="#contact btn">contact</a></li>
+      </ul>
+      <!-- Buguer -->
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+    <div class="mobile-nav">
+      <ul class="mobile-ul">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a href="#" class="btn">Contact</a></li>
+        <li>
+          <a href="#" class="btn">Contact</a>
+        </li>
       </ul>
     </div>
+  </div>
 
-    <div class="title">
-      <h1>We are creatives</h1>
-      <img src="./images/icon-arrow-down.svg" alt="">
-    
-    </div>
-
+  <h1 class="texto-grande cor-branca">We are creatives</h1>
+  <img src="./images/icon-arrow-down.svg" alt="">
   </header>
+
+  <script src="./script.js"></script>
   
 </body>
 </html>

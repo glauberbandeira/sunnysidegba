@@ -1,0 +1,176 @@
+/* Fontes */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+/* Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Fraunces", sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+/* ----------------------------------- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* cores */
+.cor-branca {
+  color: #ffffff;
+}
+
+.botao-contact {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.cor-font-botao {
+  color: #0080ff;
+}
+.botao-contact:hover {
+  background-color: #0080ff;
+  color: #ffffff;
+  transition: all 0.6s ease;
+}
+
+/* Burguer */
+.burger div {
+  height: 3px;
+  width: 30px;
+  background-color: #ffffff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.mobile-img {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+}
+
+.btn {
+  position: relative;
+  z-index: 1;
+  color: #0db4ff;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 50px;
+  width: 120px;
+  z-index: -1;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover::before {
+  background-color: #0db4ff;
+}
+
+/* Botao responsivo */
+@media screen and (max-width: 600px) {
+  header {
+    background: url(./images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 90%;
+  }
+
+  .header .header-menu {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 90%;
+    right: 0;
+    top: 10%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    position: absolute;
+  }
+
+  .mobile-nav-active {
+    transform: translateX(-5%);
+  }
+
+  .mobile-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+  }
+
+  .mobile-ul a {
+    color: #0080ff;
+    font-size: 25px;
+  }
+
+  .btn::before {
+    background-color: #ffad00;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .toggle .line-1 {
+    transform: rotate(45deg) translateX(11px);
+  }
+  .toggle .line-2 {
+    opacity: 0;
+  }
+  .toggle .line-3 {
+    transform: rotate(-45deg) translateX(11px);
+  }
+  .mobile-img {
+    display: block;
+  }
+}

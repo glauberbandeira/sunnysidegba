@@ -1,141 +1,15 @@
-/* Importando fontes */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import './global/global.css';
+@import './home/header.css';
+@import './global/tipografica.css';
 
-/* Resetando */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-size: 1.125rem;
-  font-family: "Barlow", sans-serif;
-}
-img {
-  max-width: 100%;
-}
-h1,
-h2,
-.learn-more,
-h3 {
-  font-family: "Fraunces", sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-/* -------------------------------------- */
-/* Header */
-header {
-  /* height: 100vw; */
+.header-bg {
+  height: 100vw;
   height: 100vh;
-  background: url(../images/desktop/image-header.jpg);
+  background: url("../images/desktop/image-header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-header .header {
-  max-width: 1200px;
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+.header-bg h1 {
+  font-size: 3rem;
 }
-
-.header .header-menu {
-  display: flex;
-  gap: 20px;
-}
-.header .header-menu li a{
-  font-size: 20px;
-  display: inline-block;
-  padding: 0 20px;
-  color: #fff;
-  text-transform: lowercase;
-}
-.header .header-menu .btn {
-  position: relative;
-  z-index: 1;
-  color: #5a636c;
-}
-.header .header-menu .btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  border-radius: 30px;
-  height: 50px;
-  width: 120px;
-  z-index: -1;
-  transition: background-color 0.3s ease;
-}
-.header .header-menu .btn:hover::before {
-  background-color: #00a3f0;
-}
-.header .header-menu .btn:hover {
-  color: #ffffff;
-}
-
-header .title {
-  max-width: 1200px;
-  font-size: 2rem;
-  letter-spacing: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 4rem;
-  color: #ffffff; 
-}
-header .title img {
-  max-width: 50px;
-  margin-top: 4rem;
-}
-/* Responsivo Header */
-@media (max-width: 800px) {
-  header {
-    /* height: 100vw; */
-    height: 100vh;
-    background: url(../images/mobile/image-header.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  header .header {
-    max-width: 600px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-  }
-  .header .header-menu {
-    margin-top: 20px;
-  }
-  header .title {
-    max-width: 600px;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 7rem;
-    color: #ffffff; 
-  }
-}
-
